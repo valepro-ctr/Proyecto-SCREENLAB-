@@ -1,0 +1,513 @@
+    
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Tienda especializada en pantallas para celulares.">
+
+    <title>SCREENLAB | Pantallas para celulares</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="announcement">
+        ENVÍOS DISPONIBLES · CALIDAD Y GARANTÍA EN CADA PANTALLA
+    </div>
+
+    <header>
+
+        <a href="#" class="logo">
+            SCREEN<span>LAB.</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav id="nav">
+            <a href="#">INICIO</a>
+            <a href="#catalogo">PRODUCTOS</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="#catalogo">BUSCAR ↗</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    TECNOLOGÍA · PRECISIÓN · CALIDAD
+                </span>
+
+                <h1>
+                    Tu celular merece una nueva pantalla.
+                </h1>
+
+                <p>
+                    Encuentra pantallas LCD y OLED para diferentes
+                    modelos de celulares. Calidad, compatibilidad
+                    y atención personalizada en un solo lugar.
+                </p>
+
+                <div class="actions">
+
+                    <a href="#catalogo" class="btn">
+                        EXPLORAR PRODUCTOS
+                    </a>
+
+                    <a href="#nosotros" class="btn btn-outline">
+                        CONOCER MÁS
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image"></div>
+
+        </section>
+
+        <!-- BENEFICIOS -->
+
+        <section class="benefits">
+
+            <div class="benefit">
+                ✦ CALIDAD SELECCIONADA
+                <span>Productos revisados antes del envío</span>
+            </div>
+
+            <div class="benefit">
+                ✦ ATENCIÓN PERSONALIZADA
+                <span>Te ayudamos a elegir tu pantalla</span>
+            </div>
+
+            <div class="benefit">
+                ✦ COMPRA SEGURA
+                <span>Consulta disponibilidad y garantía</span>
+            </div>
+
+        </section>
+    
+<!-- CATÁLOGO -->
+<section class="catalog" id="catalogo">
+
+    <div class="section-top">
+        <span class="eyebrow">NUESTRA COLECCIÓN</span>
+        <h2>Encuentra tu pantalla</h2>
+        <p>Soluciones para devolverle vida a tu dispositivo.</p>
+    </div>
+
+    <!-- BUSCADOR Y FILTROS -->
+    <div class="filters">
+
+        <input
+            type="search"
+            id="search"
+            placeholder="Buscar modelo, marca o tecnología..."
+            aria-label="Buscar productos"
+        >
+
+        <select id="brand" aria-label="Filtrar por marca">
+            <option value="all">Todas las marcas</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Apple">Apple</option>
+            <option value="Xiaomi">Xiaomi</option>
+        
+            <option value="Infinix">Infinix</option>
+<option value="Tecno">Tecno</option>
+   
+        <option value="Honor">Honor</option>
+        </select>
+
+        <select id="type" aria-label="Filtrar por tecnología">
+            <option value="all">Todos los tipos</option>
+            <option value="LCD">LCD</option>
+            <option value="OLED">OLED</option>
+            <option value="AMOLED">AMOLED</option>
+        </select>
+
+    </div>
+
+    <div class="catalog-results">
+        <span id="resultCount">4 productos disponibles</span>
+        <button type="button" id="clearFilters">Limpiar filtros</button>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="products" id="products">
+
+        <article class="product"
+            data-brand="Samsung"
+            data-type="LCD"
+            data-name="Pantalla Samsung A04"
+            data-model="Galaxy A04"
+            data-description="Módulo de pantalla de reemplazo para Samsung Galaxy A04. Confirma la versión exacta antes de comprar."
+            data-price="140">
+
+            <div class="product-image">
+                <span class="tag">MÁS VENDIDO</span>
+                <img
+                    src="https://www.cellspare.com/image/cache/catalog/data/Accessories%20Villa/Product%20image/galaxy-a04-lcd-screen-display-module-1000x1000.jpg"
+                    alt="Módulo de pantalla Samsung Galaxy A04"
+                    loading="lazy">
+            </div>
+
+            <div class="product-info">
+                <small>SAMSUNG · LCD</small>
+                <h3>Pantalla Samsung A04</h3>
+                <p>Repuesto para Samsung Galaxy A04.</p>
+                <div class="price">Bs 140</div>
+
+                <button class="buy details-btn" type="button">
+                    VER DETALLES
+                </button>
+                <button class="buy whatsapp-btn" type="button">
+                    CONSULTAR POR WHATSAPP ↗
+                </button>
+            </div>
+        </article>
+
+        <article class="product"
+            data-brand="Apple"
+            data-type="GX"
+            data-name="Pantalla iPhone 11"
+            data-model="iPhone 11"
+            data-description="Pantalla de reemplazo para iPhone 11. Verifica la tecnología y la versión del repuesto antes de realizar la compra."
+            data-price="250">
+
+            <div class="product-image">
+                <span class="tag">Disponible</span>
+                <img
+                    src="https://repairpartsusa.com/cdn/shop/products/iPhone-13-incell-screen-replacement2_1024x.png?v=1664545824"
+                    alt="Imagen ilustrativa de módulo de pantalla para iPhone"
+                    loading="lazy">
+            </div>
+
+            <div class="product-info">
+                <small>APPLE · GX</small>
+                <h3>Pantalla iPhone 11</h3>
+                <p>Consultar versión y tecnología disponible.</p>
+                <div class="price">Bs 250</div>
+
+                <button class="buy details-btn" type="button">
+                    VER DETALLES
+                </button>
+                <button class="buy whatsapp-btn" type="button">
+                    CONSULTAR POR WHATSAPP ↗
+                </button>
+            </div>
+        </article>
+
+        <article class="product"
+            data-brand="Xiaomi"
+            data-type="OLED"
+            data-name="Pantalla Redmi Note 10"
+            data-model="Redmi Note 10"
+            data-description="Módulo de pantalla para Xiaomi Redmi Note 10. Comprueba la variante exacta de tu dispositivo."
+            data-price="390">
+
+            <div class="product-image">
+                <span class="tag">DISPONIBLE</span>
+                <img
+                    src="https://acdn.mitiendanube.com/stores/356/280/products/5518-modulo-xiaomi-redmi-note-10-10s-negro-11-97134fd2e60a79150c16668965495320-640-0.jpg"
+                    alt="Módulo de pantalla Xiaomi Redmi Note 10"
+                    loading="lazy">
+            </div>
+
+            <div class="product-info">
+                <small>XIAOMI · OLED</small>
+                <h3>Redmi Note 10</h3>
+                <p>Repuesto compatible. Verificar variante.</p>
+                <div class="price">Bs 390</div>
+
+                <button class="buy details-btn" type="button">
+                    VER DETALLES
+                </button>
+                <button class="buy whatsapp-btn" type="button">
+                    CONSULTAR POR WHATSAPP ↗
+                </button>
+            </div>
+        </article>
+
+        <article class="product"
+    data-brand="Infinix"
+    data-type="LCD"
+    data-name="Pantalla Infinix Hot 10"
+    data-model="Infinix Hot 10"
+    data-description="Pantalla de reemplazo para Infinix Hot 10. Confirma la versión exacta antes de comprar."
+    data-price="220">
+
+    <div class="product-image">
+        <span class="tag">Disponible</span>
+        
+        <img
+    src="https://api.powerfix.ph/small/clients/powerfix.ph/uploads/product-1706297069-8.png"
+    alt="Módulo LCD Infinix Hot 10"
+    loading="lazy">
+    
+    </div>
+
+    <div class="product-info">
+        <small>INFINIX · LCD</small>
+        <h3>Infinix Hot 10</h3>
+        <p>Consulta la compatibilidad de tu dispositivo.</p>
+        <div class="price">Bs 220</div>
+
+        <button class="buy details-btn" type="button">
+            VER DETALLES
+        </button>
+        <button class="buy whatsapp-btn" type="button">
+            CONSULTAR POR WHATSAPP ↗
+        </button>
+    </div>
+</article>
+  <article class="product"
+    data-brand="Tecno"
+    data-type="LCD"
+    data-name="Pantalla Tecno Spark 8C"
+    data-model="Tecno Spark 8C"
+    data-description="Pantalla de reemplazo para Tecno Spark 8C. Confirma la versión exacta antes de comprar."
+    data-price="140">
+
+    <div class="product-image">
+        <span class="tag">Disponible </span>
+        <img
+    src="https://www.helloprice.sn/24209-large_default/tecno-spark-8-ecran-lcd-de-remplacement-avec-panneau-tactile.jpg"
+    alt="Módulo LCD Tecno Spark 8C"
+    loading="lazy">
+        
+    </div>
+
+    <div class="product-info">
+        <small>TECNO · LCD</small>
+        <h3>Tecno Spark 8C</h3>
+        <p>Consulta la compatibilidad de tu dispositivo.</p>
+        <div class="price">Bs140 </div>
+
+        <button class="buy details-btn" type="button">
+            VER DETALLES
+        </button>
+        <button class="buy whatsapp-btn" type="button">
+            CONSULTAR POR WHATSAPP ↗
+        </button>
+    </div>
+</article>
+          
+<article class="product"
+    data-brand="Honor"
+    data-type="OLED"
+    data-name="Pantalla Honor X8C"
+    data-model="Honor X8C"
+    data-description="Pantalla OLED de reemplazo para Honor 8C. Confirma la compatibilidad y versión exacta antes de comprar."
+    data-price="500">
+
+    <div class="product-image">
+        <span class="tag">Disponible</span>
+        <img
+    src="https://refaccionestechhouse.mx/cdn/shop/files/HOX8COEM-3.jpg?v=1775577236&width=1946"
+    alt="Pantalla OLED de repuesto para Honor X8c"
+    loading="lazy"
+>
+    </div>
+
+    <div class="product-info">
+        <small>HONOR · OLED</small>
+        <h3>Pantalla Honor X8C</h3>
+        <p>Repuesto de pantalla para Honor X8C.</p>
+        <div class="price">Bs 500</div>
+
+        <button class="buy details-btn" type="button">
+            VER DETALLES
+        </button>
+
+        <button class="buy whatsapp-btn" type="button">
+            CONSULTAR POR WHATSAPP ↗
+        </button>
+    </div>
+</article>
+                   
+                           <article class="product"
+            data-brand="Apple"
+            data-type="GX"
+            data-name="Pantalla iPhone 13"
+            data-model="iPhone 13"
+            data-description="Pantalla de reemplazo para iPhone 13. Verifica la tecnología y la versión del repuesto antes de realizar la compra."
+            data-price="800">
+
+            <div class="product-image">
+                <span class="tag">Disponible</span>
+                <img
+                    src="https://repairpartsusa.com/cdn/shop/products/iPhone-13-incell-screen-replacement2_1024x.png?v=1664545824"
+                    alt="Imagen ilustrativa de módulo de pantalla para iPhone"
+                    loading="lazy">
+            </div>
+
+            <div class="product-info">
+                <small>APPLE · GX</small>
+                <h3>Pantalla iPhone 13</h3>
+                <p>Consultar versión y tecnología disponible.</p>
+                <div class="price">Bs 800</div>
+
+                <button class="buy details-btn" type="button">
+                    VER DETALLES
+                </button>
+                <button class="buy whatsapp-btn" type="button">
+                    CONSULTAR POR WHATSAPP ↗
+                </button>
+            </div>
+        </article>
+
+
+    </div>
+
+</section>
+
+
+        <!-- PROMOCIÓN -->
+
+        <section class="promo" id="nosotros">
+
+            <div class="promo-content">
+
+                <span class="eyebrow">
+                    COMPRA INTELIGENTE
+                </span>
+
+                <h2>
+                    La pantalla correcta hace la diferencia.
+                </h2>
+
+                <p>
+                    No todas las pantallas son iguales.
+                    Te ayudamos a identificar el repuesto adecuado
+                    según el modelo, la versión y la tecnología
+                    de tu celular.
+                </p>
+
+                <a href="#contacto" class="btn">
+                    SOLICITAR ASESORAMIENTO
+                </a>
+
+            </div>
+
+            <div class="promo-image"></div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer id="contacto">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3 class="logo">
+                    SCREEN<span class="logo-footer">LAB.</span>
+                </h3>
+
+                <p>
+                    Especialistas en pantallas y repuestos para celulares.
+                    Tecnología y calidad para mantener tus dispositivos
+                    en funcionamiento.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>EXPLORAR</h3>
+
+                <a href="#">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
+
+            </div>
+
+            <div>
+
+                <h3>CONTACTO</h3>
+
+                <a href="https://wa.me/59170036675" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                </a>
+
+                <a href="mailto:ventas@screenlab.com">
+                    Correo electrónico
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 SCREENLAB. Todos los derechos reservados.
+        </div>
+
+    </footer>
+    
+
+<!-- VENTANA DE DETALLES DEL PRODUCTO -->
+<div class="product-modal" id="productModal" aria-hidden="true">
+
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+        <button
+            class="modal-close"
+            id="closeModal"
+            type="button"
+            aria-label="Cerrar ventana">
+            &times;
+        </button>
+
+        <span class="eyebrow">INFORMACIÓN DEL PRODUCTO</span>
+       <div class="modal-product-image">
+    <img id="modalImage" src="" alt="Imagen del producto">
+</div>
+    
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <p id="modalTechnology"></p>
+
+        <strong id="modalPrice"></strong>
+
+        <button
+            class="buy"
+            id="modalWhatsApp"
+            type="button">
+            CONSULTAR POR WHATSAPP ↗
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
