@@ -1,4 +1,4 @@
-
+alert("SCREENLAB: JavaScript está funcionando");
 document.addEventListener("DOMContentLoaded", () => {
 
     // ==================================
